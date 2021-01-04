@@ -1,0 +1,41 @@
+{% extends "network/layout.html" %}
+{% load static %}
+
+{% block body %}
+
+<div class="tools">
+    <div>
+        <form method="POST" id="code_search">
+            {% csrf_token %}
+            <input id="code_value" type="text" placeholder="Search by Module Code">
+        </form>
+        <form method="POST" id="name_search">
+            {% csrf_token %}
+            <input id="name_value" type="text" placeholder="Search by Module Name" >
+        </form>
+    </div>
+    
+    <form action="{% url 'new_module' %}" id="new_module_button">
+        <input class="btn btn-primary" type="submit" value="Create New Module">
+    </form>
+</div>
+
+{% if message %}
+    <div class="warning">{{ message }}</div>
+{% endif %}
+
+<div class="modulelist">
+    {% for module in modules %}
+        <div class="module" id="{{ module.module_code }}">
+            <div class="code">{{ module.module_code }}</div>
+            <div class="name">{{ module.module_name }}</div>
+        </div>
+    {% endfor %}    
+</div>
+
+{% endblock %}
+
+
+{% block script %}
+<script src="{% static 'network/index.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,103 @@
+#body {
+    background-color: #e3f2fd;
+}
+
+.tools {
+    justify-content: space-between;  
+    margin: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.tools > * {
+    margin: 1%
+}
+
+.warning {
+    margin: 1%;
+    color: red;
+}
+
+.center {
+    text-align: center;
+}
+
+
+.create_form {
+    margin: 1%;
+}
+
+.profile_summary {
+    border-radius: 15px;
+    border-style: solid;
+    border-width: medium;
+    border-color: rgb(135, 153, 231);
+    background-color: rgb(183, 192, 233);
+}
+
+
+.profile_img_show {
+    margin-top: 2%;
+    border-radius: 50%;
+    box-shadow: 0 30px 40px rgba(0,0,0,.1);
+}
+
+.module {
+    margin: 1%;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: medium;
+    border-color: lightseagreen;
+    border-left: 6px solid darkcyan;
+    background-color: lightcyan;
+}
+
+.module > * {
+    margin: 0.5%;
+}
+
+.code {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.module > .name {
+    font-style: italic;
+}
+
+.module > .summary {
+    color: darkgrey;
+}
+
+.header {
+    color: black;
+}
+
+#create_review_button {
+    float: right;
+}
+
+.reviews{
+    margin: 1%;
+}
+
+.reviews > *{
+    margin: 1%;
+}
+
+.edit_review > .text{
+    margin: 1%;
+}
+
+.review {
+    border-style: solid;
+    border-width: medium;
+    border-radius: 15px;
+    border-color: rgb(103, 150, 211);
+    background-color: rgb(155, 184, 223);
+}
+
+.text {
+    text-align: left;
+}

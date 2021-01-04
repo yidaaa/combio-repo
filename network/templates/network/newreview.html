@@ -1,0 +1,50 @@
+{% extends "network/layout.html" %}
+{% load static %}
+
+{% block body %}
+
+<div class="create_form">
+
+    <div class="title" id="{{code}}" > <strong>Review for {{ code }}</strong></div>
+
+    <form method="post" id="create_review_form">
+        {% csrf_token %} 
+        <label for="year" class="control-label">Year / Semester taken</label>
+        <div class="form-group" id="yeartaken">
+            <div class="col-md-6">
+                <div class="form-group row">
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="year" placeholder="YYYY">
+                    </div>/
+                    <div class="col-md-3">
+                        <select class="form-control" name="semester" id="semester">
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% if message %}
+            <div class="warning">{{ message }}</div>
+        {% endif %}
+        
+        <div class="form-group">
+            <label for="professor">Lecturer: </label>
+            <input class="form-control" type="professor" name="professor" id="professor" placeholder="Professor incharge of module">
+        </div>
+
+        <div class="form-group">
+            <label for="review">Review: </label>
+            <textarea class="form-control" rows=8 name="review" id="review" placeholder="Your review"></textarea>
+        </div>
+        <input class="btn btn-info" type="submit" value="Create Review">
+    </form>
+</div>
+
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'network/createreview.js' %}"></script>
+{% endblock %}
