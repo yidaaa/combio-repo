@@ -2,14 +2,6 @@
 
 This project is inspired by the need of a common module repository for students taking the same unique major as me, since the modules we take has a lack of module reviews on larger module websites due to the small number of students taking this major, as well as having information on multiple sources due to the major being cross faculty. I've decided to create a prototype and will hand it over to the official univiersity club pertaining to my course and see if they would want to maintain it in the future for my juniors. 
 
-From this project, I get to practise and combine everything that I have learnt from project 0 to project 4 for this final project. I implemented the search functions using what I've learnt in project 1. Creation and form updating on the front end are learnt from projects 2. APIs and backend are learnt from project 3. Project 4 is a good summary of all previous projects, and taught me the use of pagination. However, for my project 4, I felt that I didn't implement my functions well and my code ended up really messy. A lot of functions are hard coded and had a hard time scaling. For example, since the updating of data into the database takes time and sometimes reloading is faster than the time it uploads due to large number of data, I used setTimeInterval functions to solve this problem, making my codes messy. Therefore, I made a point to ensure that my code can be scaled and reused. This time, I alerted the user instead, giving an appropriate time for the database to upload, before the page fetches the updated database. 
-
-Additionally, the module has only taught the storing of text-based data. I've wanted to learn how to store image data and files, even if it is stored locally. To eliminate the problem of having too many picture uploads, I delete the original photo each time a new one is uploaded, therefore the database only stores, at maximum equal to the number of users number of photos. A default image is also set for new users.  
-
-When doing this project, I've decided to learn bootstrap since most of my previous projects are rather lacking in asthetics and uses basic CSS. Hence, I've spent a lot of time trying to make the application asthetically pleasing, by using cards, nav bars, forms, buttons, alerts, page numbering and file upload components from bootstrap, on top of my own CSS, such as making profile pictures in circles and giving the whole applciation a color scheme. 
-
-Below are a summarised version of the functions I've implemented. 
-
 ## Functions:
 1. New users: Regstriation should use actual name and student identification number
 
