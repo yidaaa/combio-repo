@@ -2,6 +2,11 @@
 
 This project is inspired by the need of a common module repository for students taking the same unique major as me, since the modules we take has a lack of module reviews on larger module websites due to the small number of students taking this major, as well as having information on multiple sources due to the major being cross faculty. I've decided to create a prototype and will hand it over to the official univiersity club pertaining to my course and see if they would want to maintain it in the future for my juniors. 
 
+Website is currently hosted on heroku:
+https://module-repository.herokuapp.com/
+
+Reviews will come in after May 2021.
+
 ## Functions:
 1. New users: Regstriation should use actual name and student identification number
 
